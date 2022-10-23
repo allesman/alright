@@ -665,7 +665,8 @@ class WhatsApp(object):
         finally:
             self.browser.close()
             LOGGER.info("Browser closed.")
-
+    def close(self):
+        self.browser.close()
     def get_last_message_received(self, query: str):
         """get_last_message_received() [nCKbr]
 
